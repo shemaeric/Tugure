@@ -25,6 +25,9 @@
     "migrate:reset": "node_modules/.bin/sequelize db:migrate:undo:all",
     "test:all": "NODE_ENV=test npm run migrate:refresh && npm run seed && npm test"
   },
+  "engines": {
+    "node": "11.10.1"
+  },
   "dependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@sendgrid/mail": "^6.3.1",
