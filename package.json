@@ -17,7 +17,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./index.js --exec babel-node",
-    "heroku": "babel-node index.js",
+    "start:heroku": "babel-node index.js",
+    "heroku-postbuild": "npm install",
     "migration:generate": "node_modules/.bin/sequelize migrations:generate --name",
     "migrate": "node_modules/.bin/sequelize db:migrate",
     "seed": "NODE_ENV=test node_modules/.bin/sequelize db:seed:all",

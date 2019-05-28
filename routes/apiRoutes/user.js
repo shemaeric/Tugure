@@ -20,8 +20,6 @@ router.get('/test', tokenVerify.checkToken, (req, res) => {
   res.send({ message: 'hello' });
 });
 
-router.get('/', (req, res) => {
-  return res.send({ message: 'hello from tugure' });
-});
+router.get('/', (req, res) => res.send({ message: 'hello from tugure' }));
 
 export default router;
