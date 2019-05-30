@@ -29,7 +29,7 @@ export default {
     },
     activated: {
       type: Sequelize.STRING,
-      defaultValue: 'pending'
+      defaultValue: 'activated'
     },
     salt: {
       type: Sequelize.STRING(1024)
