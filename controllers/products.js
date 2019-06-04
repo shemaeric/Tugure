@@ -13,7 +13,9 @@ class Product {
    */
   static async createProduct(req, res) {
     const { body, user } = req;
-
+    const {
+      title, price, info
+    } = body;
     try {
       const findProduct = await products.findOne({
         where: { author: user.id, title: body.title }
@@ -24,7 +26,9 @@ class Product {
           error: ' The Book already exists'
         });
       }
-      const createProduct = await products.create({ ...body, author: user.id });
+      const createProduct = await products.create({
+        title, img: req.file ? req.file.url : null, price, info, author: user.id
+      });
       return res.status(200).send({
         status: res.statusCode,
         book: createProduct

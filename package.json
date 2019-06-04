@@ -67,8 +67,8 @@
     "sequelize": "^5.7.0",
     "sinon": "^7.3.1",
     "slug": "^1.1.0",
-    "swagger-ui-express": "^4.0.2",
     "social-share-js": "^1.0.4",
+    "swagger-ui-express": "^4.0.2",
     "underscore": "^1.9.1"
   },
   "devDependencies": {
