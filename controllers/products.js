@@ -34,6 +34,7 @@ class Product {
         book: createProduct
       });
     } catch (error) {
+      console.log(error);
       return res.status(400).send({
         status: res.statusCode,
         error: ' Something went Wrong'
