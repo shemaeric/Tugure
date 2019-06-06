@@ -13,6 +13,7 @@ class Product {
    */
   static async createProduct(req, res) {
     const { body, user } = req;
+    console.log(body);
     const {
       title, price, info
     } = body;
